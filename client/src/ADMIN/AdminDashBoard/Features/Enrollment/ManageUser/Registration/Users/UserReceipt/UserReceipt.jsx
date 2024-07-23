@@ -33,7 +33,7 @@ function UserReceipt() {
 
   return (
     <div className="container p-4 mx-auto">
-      <div className="w-full mx-auto p-4 border border-blue-500 rounded shadow-lg bg-white flex flex-col items-center justify-center">
+      <div className="w-full mx-auto p-4 border border-blue-500 rounded shadow-lg bg-white flex flex-col items-center justify-center overflow-auto">
         <h1 className="text-2xl font-semibold mb-4 text-blue-500">
           Identity Slip
         </h1>

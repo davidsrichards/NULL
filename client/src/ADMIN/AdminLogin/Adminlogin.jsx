@@ -71,7 +71,7 @@ function AdminLogin() {
   }, [isValid]);
 
   return (
-    <section className="h-full bg-neutral-200  dark:bg-neutral-700 grid justify-items-center">
+    <section className="bg-neutral-200 dark:bg-neutral-700 grid justify-items-center p-4 sm:h-auto h-screen">
       <div className="container h-full sm:px-10 px-2">
         <div className="g-6 flex h-full flex-wrap items-center justify-center text-neutral-800 dark:text-neutral-200">
           <div className="w-full">
@@ -84,7 +84,7 @@ function AdminLogin() {
                     <div className="text-center">
                       <img
                         className="mx-auto w-48 relative top-4 pb-4"
-                        src=" https://th.bing.com/th/id/R.b2b34517339101a111716be1c203f354?rik=e5WHTShSpipi3Q&pid=ImgRaw&r=0 "
+                        src=" https://th.bing.com/th/id/R.b2b34517339101a111716be1c203f354?rik=e5WHTShSpipi3Q&pid=ImgRaw&r=0"
                         alt="logo"
                       />
                       <h4 className="mb-3 mt-1 pb-1 text-xl font-semibold">
@@ -105,7 +105,7 @@ function AdminLogin() {
                             value={admin.username}
                             onChange={handleUsername}
                             type="text"
-                            className="w-full p-2 ring-1 hover:ring-blue-400 hover:bg-[#f0f0f0] outline-none transition duration-300 ease-in-out"
+                            className="w-full p-2 ring-1  text-black hover:ring-blue-400 hover:bg-[#f0f0f0] outline-none transition duration-300 ease-in-out"
                           />
                         </div>
                         {/* password */}
@@ -115,7 +115,7 @@ function AdminLogin() {
                             value={admin.password}
                             onChange={handlePassword}
                             type="password"
-                            className="w-full p-2 hover:ring-1 hover:ring-blue-400 hover:bg-[#f0f0f0] outline-none transition duration-300 ease-in-out"
+                            className="w-full p-2 ring-1  text-black hover:ring-blue-400 hover:bg-[#f0f0f0] outline-none transition duration-300 ease-in-out"
                           />
                         </div>
                       </div>

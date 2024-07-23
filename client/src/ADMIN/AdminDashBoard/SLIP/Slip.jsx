@@ -18,19 +18,26 @@ function Slip({
     <ul role="list" className="divide-y p-4 first:pb-0 last:pb-0 pb-4">
       <div className="grid grid-cols-2 gap-24 p-4">
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">First Name:</span>
+          <span className="font-semibold text-gray-600 text-nowrap">
+            First Name:
+          </span>
           {firstname || "Dauda"}
         </li>
         {/*  */}
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Last Name:</span>{" "}
+          <span className="font-semibold text-gray-600 text-nowrap">
+            Last Name:
+          </span>{" "}
           {lastname || "Richard"}
         </li>
       </div>
       {/* ... */}
       <div className="grid grid-cols-2  gap-24 p-4">
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Middle Name:</span> {""}
+          <span className="font-semibold text-gray-60 text-nowrap">
+            Middle Name:
+          </span>{" "}
+          {""}
         </li>
         {/* ... */}
         <li className="mb-4 flex gap-4">{middlename || "None"}</li>
@@ -38,67 +45,94 @@ function Slip({
       {/*  */}
       <div className="grid grid-cols-2  gap-24 p-4">
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Email:</span>{" "}
-          {email || "daudarichard04@gmail.com"}
+          <span className="font-semibold text-gray-600 text-nowrap">
+            Email:
+          </span>{" "}
+          {""}
         </li>
         {/* ... */}
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Date of Birth:</span>{" "}
-          {dateOfBirth || "11/05/2004"}
+          {email || "daudarichard04@gmail.com"}
         </li>
       </div>
       {/* ... */}
       <div className="grid grid-cols-2  gap-24 p-4">
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">LGA:</span>{" "}
+          <span className="font-semibold text-gray-600 text-nowrap">
+            Date Of Birth:
+          </span>{" "}
+          {""}
+        </li>
+        {/* ... */}
+        <li className="mb-4 flex gap-4">{dateOfBirth || "11/05/2024"}</li>
+      </div>
+      {/*  */}
+      <div className="grid grid-cols-2  gap-24 p-4">
+        <li className="mb-4 flex gap-4">
+          <span className="font-semibold text-gray-600 text-nowrap">LGA:</span>{" "}
           {lga || "keffi"}
         </li>
         {/* ... */}
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Blood Group:</span>{" "}
+          <span className="font-semibold text-gray-600 text-nowrap">
+            Blood Group:
+          </span>{" "}
           {bloodGroup || "AA"}
         </li>
       </div>
       {/* ... */}
       <div className="grid grid-cols-2  gap-24 p-4">
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Genotype:</span>{" "}
+          <span className="font-semibold text-gray-600 text-nowrap">
+            Genotype:
+          </span>{" "}
           {genotype | "A"}
         </li>
         {/* ... */}
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Tribe:</span>{" "}
+          <span className="font-semibold text-gray-600 text-nowrap">
+            Tribe:
+          </span>{" "}
           {tribe || "mada"}
         </li>
       </div>
       {/* ... */}
       <div className="grid grid-cols-2  gap-24 p-4">
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Height:</span>{" "}
+          <span className="font-semibold text-gray-600 text-nowrap">
+            Height:
+          </span>{" "}
           {height || "12.6"}
         </li>
         {/* ... */}
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Occupation:</span>{" "}
+          <span className="font-semibold text-gray-600 text-nowrap">
+            Occupation:
+          </span>{" "}
           {occupation || "student"}
         </li>
       </div>
       {/* ... */}
       <div className="grid grid-cols-2  gap-24 p-4">
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Contact:</span>{" "}
+          <span className="font-semibold text-gray-600 text-nowrap">
+            Contact:
+          </span>{" "}
           {phoneNumber || "09068842993"}
         </li>
         {/* ... */}
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">Marital Status:</span>{" "}
+          <span className="font-semibold text-gray-600 text-nowrap">
+            Marital Status:
+          </span>{" "}
           {maritalStatus || "Single"}
         </li>
       </div>
       {/*  */}
       <div className="grid grid-cols-2  gap-24 p-4">
         <li className="mb-4 flex gap-4">
-          <span className="font-semibold text-gray-600">ID:</span> {""}
+          <span className="font-semibold text-gray-600 text-nowrap">ID:</span>{" "}
+          {""}
         </li>
         {/* ... */}
         <li className="mb-4 flex gap-4">{userId || "Single"}</li>
