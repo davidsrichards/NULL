@@ -49,6 +49,7 @@ function App() {
           <Route path="profile" element={<AdminProfile />} />
           <Route index element={<ManageUser />} />
         </Route>
+        <Route path="*" element={<AdminLogin />} />
       </Routes>
     </div>
   );

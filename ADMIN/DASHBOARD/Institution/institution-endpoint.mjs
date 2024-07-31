@@ -21,7 +21,7 @@ institutionRout.post(
         institutionCode: data.institutionCode,
       });
       if (findInstitution)
-        return res.status(401).send("Institution Already Exist");
+        return res.status(403).send("Institution Already Exist");
       const newInstitution = new Institution(data);
       newInstitution.institutionID = crypto
         .randomUUID()

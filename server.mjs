@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
+import morgan from "morgan";
 import dotenv from "dotenv";
 import adminRout from "./ADMIN/Admin-endpoint/admin-endpoin.mjs";
 import userRout from "./ADMIN/DASHBOARD/USERS/users-endpoint.mjs";
@@ -29,6 +30,7 @@ app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(morgan("tiny"));
 
 app.use(adminRout);
 app.use(userRout);

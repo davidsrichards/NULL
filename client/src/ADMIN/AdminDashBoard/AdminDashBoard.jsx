@@ -7,9 +7,9 @@ import { useEffect } from "react";
 
 const AdminDashBoard = () => {
   // getting state
-  const { username } = useSelector((state) => state.adminData.information);
+  const username = useSelector((state) => state.adminData.information);
   if (!username) {
-    return <Navigate to={"/"} replace={true} />;
+    return <Navigate to={"/"}></Navigate>;
   }
 
   return (

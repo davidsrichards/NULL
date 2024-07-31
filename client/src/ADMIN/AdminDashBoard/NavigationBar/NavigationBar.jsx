@@ -33,18 +33,18 @@ function NavigationBar({ username }) {
       </div>
 
       {/* admin name */}
-      <span className="absolute lg:top-8 lg:right-40 lg:block hidden uppercase font-semibold">
+      <span className="absolute lg:top-6 lg:right-40 lg:block hidden uppercase font-semibold">
         {username}
       </span>
       {/*  */}
-      <span className="absolute top-8 left-40 lg:hidden block uppercase font-semibold">
+      <span className="absolute top-6 left-40 lg:hidden block uppercase font-semibold">
         {username}
       </span>
       <Link to={"profile"}>
         <img
           src="https://th.bing.com/th/id/R.b2b34517339101a111716be1c203f354?rik=e5WHTShSpipi3Q&pid=ImgRaw&r=0"
           alt=""
-          className="w-[4rem] absolute top-3 left-14 rounded-full cursor-pointer hover:scale-110 lg:hidden block transition-all duration-500 ease-in-out"
+          className="w-[3.3rem] absolute top-3 left-14 rounded-full cursor-pointer hover:scale-110 lg:hidden block transition-all duration-500 ease-in-out"
         />
       </Link>
       {/*  */}
@@ -52,7 +52,7 @@ function NavigationBar({ username }) {
         <img
           src="https://th.bing.com/th/id/R.b2b34517339101a111716be1c203f354?rik=e5WHTShSpipi3Q&pid=ImgRaw&r=0"
           alt=""
-          className="w-[4rem] absolute top-3 right-14 lg:block hidden rounded-full cursor-pointer hover:scale-110 transition-all duration-500 ease-in-out"
+          className="w-[3.3rem] absolute top-3 right-14 lg:block hidden rounded-full cursor-pointer hover:scale-110 transition-all duration-500 ease-in-out"
         />
       </Link>
     </nav>

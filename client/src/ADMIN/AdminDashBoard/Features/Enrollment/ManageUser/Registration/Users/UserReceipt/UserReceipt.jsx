@@ -33,7 +33,7 @@ function UserReceipt() {
 
   return (
     <div className="container p-4 mx-auto">
-      <div className="w-full mx-auto p-4 border border-blue-500 rounded shadow-lg bg-white flex flex-col items-center justify-center overflow-auto">
+      <div className="w-full mx-auto p-2 border border-blue-500 rounded shadow-lg bg-white flex flex-col items-center justify-center overflow-auto">
         <h1 className="text-2xl font-semibold mb-4 text-blue-500">
           Identity Slip
         </h1>
@@ -55,7 +55,7 @@ function UserReceipt() {
         {/* ... */}
 
         <button
-          className="bg-blue-500 w-full text-white py-4 px-4 rounded hover:bg-blue-600 transition duration-300 ease-in-out"
+          className="bg-blue-500 w-full text-white py-3 px-4 rounded hover:bg-blue-600 transition duration-300 ease-in-out"
           onClick={printSlip}
         >
           Print Slip

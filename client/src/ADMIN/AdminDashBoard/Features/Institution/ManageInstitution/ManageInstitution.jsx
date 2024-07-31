@@ -37,7 +37,6 @@ function ManageInstitution() {
     const fetchAll = async () => {
       const response = await axios.get(GET_ALL).catch((err) => {
         if (err) {
-          console.log(err);
           setLoading(false);
           setServerError(true);
         }
@@ -45,7 +44,7 @@ function ManageInstitution() {
 
       if (response) {
         setInstitutions(response.data);
-        console.log(response.data);
+
         setLoading(false);
         setServerError(false);
       }
