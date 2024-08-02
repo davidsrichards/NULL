@@ -37,7 +37,7 @@ function AdminLogin() {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
-    <section className="bg-neutral-2 h-screen dark:bg-neutral-700 flex items-center justify-center bg-neutral-50">
+    <section className="bg-neutral-2 h-screen dark:bg-neutral-700 flex items-center justify-center bg-neutral-50 sm:p-2 p-3">
       <Toaster position="center-top" reverseOrder={false}></Toaster>
       <div className="g-0 lg:flex lg:flex-wrap w-full  items-center justify-center">
         {/* <!-- Left column container--> */}

@@ -21,14 +21,14 @@ function Slip({
           <span className=" text-gray-600 text-nowrap font-bold">
             First Name:
           </span>
-          {firstname || "Dauda"}
+          {firstname}
         </li>
         {/*  */}
         <li className="mb-4 flex gap-4">
           <span className=" text-gray-600 text-nowrap font-bold">
             Last Name:
           </span>{" "}
-          {lastname || "Richard"}
+          {lastname}
         </li>
       </div>
       {/* ... */}
@@ -49,9 +49,7 @@ function Slip({
           {""}
         </li>
         {/* ... */}
-        <li className="mb-4 flex gap-4">
-          {email || "daudarichard04@gmail.com"}
-        </li>
+        <li className="mb-4 flex gap-4">{email}</li>
       </div>
       {/* ... */}
       <div className="grid grid-cols-2  gap-24 p-2">

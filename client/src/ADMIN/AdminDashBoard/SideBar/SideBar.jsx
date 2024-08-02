@@ -78,6 +78,10 @@ function SideBar({ username }) {
               value={"Manage Institution"}
             />
           </li>
+          <SidebarItems
+            to={"/dashboard/institution/verify-institution-code"}
+            value={"Find User"}
+          />
 
           <li className="p-4 hover:bg-gray-700 cursor-pointer  flex items-center justify-between">
             <Link to={"profile"}>Profile</Link>

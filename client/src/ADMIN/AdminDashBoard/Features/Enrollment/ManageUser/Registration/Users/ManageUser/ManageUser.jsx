@@ -38,7 +38,6 @@ function ManageUser() {
       }
     };
     fetData();
-    console.log("rendered");
   }, []);
 
   const handleDelete = async (id) => {

@@ -9,13 +9,17 @@ import Enrollment from "./ADMIN/AdminDashBoard/Features/Enrollment/Enrollment";
 import Institutiton from "./ADMIN/AdminDashBoard/Features/Institution/Institution";
 import RegisterInstitution from "./ADMIN/AdminDashBoard/Features/Institution/RegisterInstitution/RegisterInstitution";
 import VerifyInstitution from "./ADMIN/AdminDashBoard/Features/Institution/UpdateInstitution/Verifyinstitution/Verifyinstitution";
+import VerifyInstitutionCode from "./ADMIN/AdminDashBoard/Features/Institution/FindUser/VerifyInstitutionCode";
 import UpdateInstition from "./ADMIN/AdminDashBoard/Features/Institution/UpdateInstitution/UpdateInstitution";
+import FindUserByInstitutionCode from "./ADMIN/AdminDashBoard/Features/Institution/FindUser/FindUser";
+import InstitutionUserDetails from "./ADMIN/AdminDashBoard/Features/Institution/FindUser/UserDetails";
 import ManageInstitution from "./ADMIN/AdminDashBoard/Features/Institution/ManageInstitution/ManageInstitution";
 import UserReceipt from "./ADMIN/AdminDashBoard/Features/Enrollment/ManageUser/Registration/Users/UserReceipt/UserReceipt";
 import SearchedUser from "./ADMIN/AdminDashBoard/Features/Enrollment/ManageUser/Registration/Users/UserReceipt/SearchedUser/SearchedUser";
 import SearchedInstitution from "./ADMIN/AdminDashBoard/Features/Institution/UpdateInstitution/SearchedInstitution/SearchedInstitution";
 import EmptyMessages from "./ADMIN/AdminDashBoard/Features/Key/EmptyMessages/EmptyMessages";
 import AdminProfile from "./ADMIN/AdminDashBoard/Features/Profile/Profile";
+
 function App() {
   return (
     <div className="w-full h-screen items-center justify-center">
@@ -40,6 +44,12 @@ function App() {
             <Route path="verify-institution" element={<VerifyInstitution />} />
             <Route path="update-institution" element={<UpdateInstition />} />
             <Route path="manage-institution" element={<ManageInstitution />} />
+            <Route
+              path="verify-institution-code"
+              element={<VerifyInstitutionCode />}
+            />
+            <Route path="find-user" element={<FindUserByInstitutionCode />} />
+            <Route path="user-detail" element={<InstitutionUserDetails />} />
             <Route
               path="searched-institution"
               element={<SearchedInstitution />}

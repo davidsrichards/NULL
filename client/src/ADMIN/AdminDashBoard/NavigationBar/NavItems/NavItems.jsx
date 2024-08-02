@@ -15,6 +15,11 @@ function NavItems() {
       <li className="p-4 w-full hover:bg-gray-700 transition duration-300 ease-in-out">
         <Link to={"institution"}>Institution</Link>
       </li>
+      <li className="p-4 w-full hover:bg-gray-700 transition duration-300 ease-in-out">
+        <Link to={"/dashboard/institution/verify-institution-code"}>
+          Find User
+        </Link>
+      </li>
       <li className="p-4 w-full  flex items-center justify-between  hover:bg-gray-700 transition duration-300 ease-in-out">
         <Link to={"profile"}>Profile</Link>
         <FaAngleDown

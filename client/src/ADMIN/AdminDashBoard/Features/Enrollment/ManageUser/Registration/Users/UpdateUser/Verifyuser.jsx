@@ -22,7 +22,6 @@ function VerifyUser() {
         .catch((err) => console.log(err.response));
       if (response) {
         setUsers(response.data);
-        console.log(response.data);
       }
     };
 

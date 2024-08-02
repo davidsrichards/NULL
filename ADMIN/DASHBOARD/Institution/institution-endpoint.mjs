@@ -4,8 +4,44 @@ import { institutionValidator } from "./Institution-validator.mjs";
 import { Institution } from "../SCHEMA/INSTITUTION-SCHEMA/institution-schema.mjs";
 import crypto from "crypto";
 import { compareCode, hashing } from "../HASHING/hashing.mjs";
+import { Users } from "../SCHEMA/USER-SCHEMA/user-schema.mjs";
 
 const institutionRout = express.Router();
+
+// middleware
+
+const getInstitutionByCodeMiddleware = async (req, res, next) => {
+  try {
+    const { code } = req.query;
+    const findInstitutionByCode = await Institution.findOne({
+      institutionCode: code,
+    });
+    if (!findInstitutionByCode)
+      return res.status(404).send("Institution Not Found");
+    req.institution = findInstitutionByCode;
+    next();
+  } catch (error) {
+    return res.status(404).send(error);
+  }
+};
+
+// find user by userId
+
+institutionRout.get(
+  "/api/admin/institution/code",
+  getInstitutionByCodeMiddleware,
+  async (req, res) => {
+    const { userId } = req.query;
+    try {
+      const findUser = await Users.findOne({ userId });
+      if (!findUser) return res.status(404).send("User not found");
+      const { password, ...reset } = Object.assign({}, findUser.toJSON());
+      return res.status(200).send(reset);
+    } catch (error) {
+      return res.status(404).send(error);
+    }
+  }
+);
 
 // post request
 
@@ -44,7 +80,7 @@ institutionRout.get("/api/admin/institution/get/all", async (req, res) => {
     return res.status(200).json(findAllInstitution);
   } catch (error) {
     console.log(error);
-    return rs.status(400).json(error);
+    return res.status(400).json(error);
   }
 });
 

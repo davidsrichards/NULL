@@ -8,6 +8,8 @@ const InstitutionSlice = createSlice({
     InstitutionInfo: {},
     searchedInstitution: [],
     institutionId: "",
+    getUsersCode: "",
+    getUserId: "",
   },
   reducers: {
     addInstitition: (state, action) => {
@@ -20,6 +22,12 @@ const InstitutionSlice = createSlice({
 
     institutionIdAction: (state, action) => {
       state.institutionId = action.payload;
+    },
+    getUsersCodeAction: (state, action) => {
+      state.getUsersCode = action.payload;
+    },
+    getUsersIdAction: (state, action) => {
+      state.getUserId = action.payload;
     },
 
     /*  updateInstitutionAction: (state, action) => {
@@ -46,5 +54,7 @@ export const {
   addInstitition,
   institutionIdAction,
   searchedInstitutionAction,
+  getUsersCodeAction,
+  getUsersIdAction,
 } = InstitutionSlice.actions;
 export default InstitutionSlice.reducer;
